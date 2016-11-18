@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>RetailerInfo</title>
+</head>
+<body>
+Welcome Retailer Info App !!!
+
+<p><b><u>All shops info</u></b></p>
+<form method="post" action="shops/all">
+<input type="submit" value="Get all shops">
+</form>
+<br>
+
+<p><b><u>Add Shops</u></b></p>
+<form method="post" action="shops/add">
+Shop Id: <input type="text" name="ShopId" value=""><br>
+Shop name: <input type="text" name="ShopName" value=""><br>
+Shop Number: <input type="text" name="ShopNumber" value=""><br>
+Shop Postal Code: <input type="text" name="ShopPostalCode" value=""><br>
+<input type="submit" value="Submit Shop Details">
+</form>
+<br>
+
+
+
+<p><b><u>Get Nearest Shops</u></b></p>
+<form method="post" action="shops/getshops">
+Customer Latitude: <input type="text" name="custLat" value=""><br>
+Customer Longitude : <input type="text" name="custLng" value=""><br>
+<input type="submit" value="Get nearest Shops">
+</form>
+
+</body>
+</html>
